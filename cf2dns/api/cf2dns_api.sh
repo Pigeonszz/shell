@@ -41,7 +41,7 @@ API_URL="https://monitor.gacjie.cn/api/client/get_ip_address"
 KEY="o1zrmHAF"
 CDN_SERVER=1
 TYPE="v4"
-CRITERIA="speed"  # 可以修改为 "delay"
+CRITERIA="speed"  # "speed"(速度) "delay"(延迟) 二选一 
 
 # 检查依赖项
 check_dependencies
@@ -67,7 +67,7 @@ if [[ $(echo "$response" | jq -r '.status') == "true" ]]; then
 
   echo "数据已成功保存到 /usr/share/cdnmonitor.csv"
 
-  # 调用更新 DNS 记录的脚本
+  # 调用更新脚本
   /path/to/update_dns_from_csv.sh
 else
   # 请求失败，输出错误信息
