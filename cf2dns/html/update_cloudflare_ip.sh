@@ -54,7 +54,7 @@ get_best_ip() {
 }
 
 # 获取每个运营商的最佳 IP 地址
-CM_IP=$(get_best_ip "CMCC_cdnspeedtestresult.csv" "CM")
+CM_IP=$(get_best_ip "CMCC_cdnspeedtestresult.csv" "CMCC")
 CU_IP=$(get_best_ip "CU_cdnspeedtestresult.csv" "CU")
 CT_IP=$(get_best_ip "CT_cdnspeedtestresult.csv" "CT")
 BGP_IP=$(get_best_ip "BGP_cdnspeedtestresult.csv" "BGP")
