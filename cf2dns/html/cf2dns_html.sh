@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # 请求URL并获取HTML内容
-url="https://monitor.gacjie.cn/page/cloudflare/ipv4.html"
+url="https://www.182682.xyz/page/cloudflare/ipv4.html"
 html_content=$(curl -s $url)
 
 # 使用awk解析HTML并生成CSV文件

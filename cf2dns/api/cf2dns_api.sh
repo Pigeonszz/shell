@@ -37,7 +37,7 @@ check_dependencies() {
 }
 
 # 配置参数
-API_URL="https://monitor.gacjie.cn/api/client/get_ip_address"
+API_URL="https://www.182682.xyz/api/cf2dns/get_cloudflare_ip"
 KEY="o1zrmHAF"
 CDN_SERVER=1
 TYPE="v4"
