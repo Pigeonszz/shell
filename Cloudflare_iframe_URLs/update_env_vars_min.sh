@@ -27,7 +27,7 @@ get_message() {
   echo "${key}_${lang}"
 }
 
-# 设置镜像源的函数
+# LANGUAGE="CN"时设置镜像源的函数
 set_mirror_source() {
   if [[ "$LANGUAGE" == "CN" ]]; then
     echo "正在设置镜像源为清华镜像..."
